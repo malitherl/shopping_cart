@@ -1,38 +1,209 @@
-.App {
+body, html {
+  margin: 0px;
+  overflow-x: hidden;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: rgba(214, 214, 214, 0.6);
+}
+
+
+.backdrop{
+  top:0;
+  left:0%;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(25,25,25,.1);
+}
+
+
+.card {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+
+  
+}
+
+.cardText {
+  background-color: aliceblue;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.cart {
+  
+  right: 0;
+  top:0;
+  margin-right: 20%;
+  margin-top: 25px;
+
+}
+
+.container {
+  position: relative;
+  display: grid; 
+  grid-template-columns: auto auto auto;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.main {
+  background-color: #1A1A1D;
+}
+
+.mini {
+  background-color: transparent;
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: rgb(25,25,25) 1px solid;
+}
+
+.modal {
+  top: 20%;
+  left: 40%;
+  height: fit-content;
+  width: 300px;
+  border-radius: 10px;
+  background-color: aliceblue; 
+  position: fixed;
+  color:#1A1A1D;
+  padding: 20px;
+  display: grid;
+  margin-left: 10px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.modal button {
+  background-color: rgba(26, 255, 255, .6); 
+  padding: 10px;
+  border-radius: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.modalButtons {
   display: flex;
-  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+
+.products {
+  color: rgb(61, 61, 61);
+  position: relative;
+  width: 100%;
+
+}
+
+a{
+  text-decoration: none;
+  color:whitesmoke;
+}
+
+
+a:hover {
+  color:rgba(26, 255, 255, .6) ;
+}
+
+img {
+  padding: 20px;
+}
+
+nav{
+  display: flex;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 10vh;
 }
 
-.App-link {
-  color: #61dafb;
+
+.nav-Links {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style-type: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button {
+  background-color: transparent;
+  padding: 5px;
+  width: fit-content;
+  border-style: none;
+  color: rgb(25,25,25);
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+button:hover {
+  background-color: rgba(26, 255, 255, .4);
+}
+
+img:hover {
+  opacity: .5;
+}
+
+#modalCancel{
+  background-color: brown;
+  float: left
+}
+
+#modalCheckout {
+  float: right;;
+  background-color: #1A1A1D;
+}
+
+nav {
+  width: 90%;
+  border-bottom: 1px lightgray solid;
+  color: grey;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  background-color: aliceblue;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+}
+
+h1 {
+  width: fit-content;
+  font-family: 'Julius Sans One', sans-serif;
+  color: rgb(61, 61, 61);
+}
+
+
+ul {
+  list-style-type: none;
+  display: flex;
+}
+
+#lhs-links{
+  float: left;
+}
+
+#rhs-links {
+  width: fit-content;
+  left: 90;
+}
+
+li{
+  margin: 10px;
+}
+
+.tea-card {
+  background-size: cover;
+  background-position: center;
+  width: 20vw;
+  height: 50vh;
+  border-radius: 25px;
+  margin-bottom: 50px;
+
+}
+
+footer {
+  background-color: aliceblue;
+  height: 10vh;
+  width: 90%;
+  margin: 0 auto;
 }
