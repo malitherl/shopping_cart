@@ -1,5 +1,4 @@
 import React from 'react';
-import Rainbow from './hoc/Rainbow';
 
 function Nav() {
     return (
