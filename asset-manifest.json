@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/malitherl/shopping_cart.git/static/css/main.88823235.css",
+    "main.js": "/malitherl/shopping_cart.git/static/js/main.3f32a459.js",
+    "index.html": "/malitherl/shopping_cart.git/index.html",
+    "main.88823235.css.map": "/malitherl/shopping_cart.git/static/css/main.88823235.css.map",
+    "main.3f32a459.js.map": "/malitherl/shopping_cart.git/static/js/main.3f32a459.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.88823235.css",
+    "static/js/main.3f32a459.js"
+  ]
+}
